@@ -1,0 +1,31 @@
+services:
+  rf2-server:
+      image: dockurr/windows
+      container_name: rf2-server
+      environment:
+        VERSION: "11"
+        RAM_SIZE: "4G"
+        CPU_CORES: "2"
+        DISK_SIZE: "120G"
+        USERNAME: "rf2user"
+        REGION: "en-GB"
+        KEYBOARD: "en-GB"
+      devices:
+        - /dev/kvm
+        - /dev/net/tun
+      cap_add:
+        - NET_ADMIN
+      ports:
+        - 8006:8006
+        - 3389:3389/tcp
+        - 3389:3389/udp
+        - 54297:54297/tcp
+        - 54297:54297/udp
+        - 64297:64297/tcp
+        - 64298:64298/udp
+        - 64299:64299/udp
+      stop_grace_period: 2m
+      volumes:
+        - ./bootstrap:/oem
+      dns:
+        - 1.1.1.1
