@@ -88,12 +88,12 @@ This project builds upon the excellent work from:
 
 ## License
 
-[Add your license information here]
+Very little of this is my own work. I've merely brought other projects together. Be respectful of the other projects licenses.
 
 ## Contributing
 
-[Add contribution guidelines here]
+Open a PR
 
 ## Support
 
-[Add support information here]
+- **[This Reddit post (if I can be bothered)](https://www.reddit.com/r/rfactor2/comments/1nhvl4r/run_a_rf2_dedicated_server_as_a_docker_container/)**
