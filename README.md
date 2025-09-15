@@ -31,7 +31,7 @@ cd rfactor2-docker-server
 docker-compose up -d
 ```
 
-You can monitor the progress of the build by browsing to http://<docker-host-ip>:8006
+You can monitor the progress of the build by browsing to http://ip-addr:8006
 
 ## Configuration
 
