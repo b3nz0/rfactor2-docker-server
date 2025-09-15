@@ -75,6 +75,8 @@ Don't forget to port-forward/pinhole the required ports from your router to your
 ```
 **DO NOT EXPOSE tcp/8006 or tcp/3389 TO THE INTERNET**
 
+**GO NEXT LEVEL ><!** - expose the containers VNC interface using Cloudflared tunnels/Cloudflare ZTNA Access Policies (FREE!) and give access to a friend or colleagues via a web-browser. Simples!
+
 ## Credits
 
 This project builds upon the excellent work from:
