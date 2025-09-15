@@ -35,9 +35,22 @@ You can monitor the progress of the build by browsing to http://<docker-host-ip>
 
 ## Configuration
 
-Once the container has initialised and Windows has completed installing, you are presented with a Desktop environment. The deployment is supposed to launch install.bat from the `C:\OEM` folder - if this doesn't occur, manually execute the BAT file to deploy `steamcmd` and `rfactor2-dedicated-server`.
+Once the container has initialised and Windows has completed installing, you are presented with a Desktop environment.
+
+The deployment is supposed to launch `install.bat` automatically from the `C:\OEM` folder - if this doesn't occur, manually execute the BAT file to deploy `steamcmd` and `rfactor2-dedicated-server` or simply run the `ps1` file - either should work fine.
 
 Modify `rf2serversetup.ps1` with the content you require.
+
+```
+...
+./steamcmd +login anonymous +workshop_download_item 365960 1629100532 +quit
+./steamcmd +login anonymous +workshop_download_item 365960 1629067802 +quit
+./steamcmd +login anonymous +workshop_download_item 365960 1629142012 +quit
+./steamcmd +login anonymous +workshop_download_item 365960 1629177826 +quit
+...
+```
+
+In the above example, `365960` == rFactor2 and `1629100532` etc are Workshop IDs from the RF2 Steam Workshop
 
 ## Credits
 
