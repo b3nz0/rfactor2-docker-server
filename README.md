@@ -35,7 +35,9 @@ You can monitor the progress of the build by browsing to http://<docker-host-ip>
 
 ## Configuration
 
-[Add your configuration instructions here]
+Once the container has initialised and Windows has completed installing, you are presented with a Desktop environment. The deployment is supposed to launch install.bat from the `C:\OEM` folder - if this doesn't occur, manually execute the BAT file to deploy `steamcmd` and `rfactor2-dedicated-server`.
+
+Modify `rf2serversetup.ps1` with the content you require.
 
 ## Credits
 
