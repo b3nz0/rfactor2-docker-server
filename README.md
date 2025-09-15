@@ -52,12 +52,18 @@ Modify `rf2serversetup.ps1` with the content you require.
 
 In the above example, `365960` == rFactor2 and `1629100532` etc are Workshop IDs from the RF2 Steam Workshop
 
+Once the bootstrapping is complete (steamcmd + rfactor-dedicated-server + steam workshop content) you need to use `ModMgr.exe` to install all the content which should have been automatically moved from `C:\steamcmd\steamsapps\workshop\content\365960` to `C:\rfactor2-dedicated\Packages`
+
+Once all the content has been installed, use `MAS.exe` to build a mod package for use with the dedicated server
+
 ## Credits
 
 This project builds upon the excellent work from:
 
 - **[afloesch/rfactor2-server-setup](https://github.com/afloesch/rfactor2-server-setup)** - Provides the rFactor2 server setup automation and configuration scripts
 - **[dockur/windows](https://github.com/dockur/windows)** - Enables running Windows applications in Docker containers
+
+- **[RF2 Official User Guides](https://docs.studio-397.com/display/UG/Setting+up+a+Dedicated+Server)** - Official User Guide for RF2 Dedi-Server
 
 ## License
 
