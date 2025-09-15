@@ -54,7 +54,7 @@ In the above example, `365960` == rFactor2 and `1629100532` etc are Workshop IDs
 
 Once the bootstrapping is complete (steamcmd + rfactor-dedicated-server + steam workshop content) you need to use `ModMgr.exe` to install all the content which should have been automatically moved from `C:\steamcmd\steamsapps\workshop\content\365960` to `C:\rfactor2-dedicated\Packages`
 
-Once all the content has been installed, use `MAS.exe` to build a mod package for use with the dedicated server
+Once all the content has been installed, use `MAS.exe` to build a mod package for use with the dedicated server. This should be fairly straight forward, I'm not going to go into detail on this as yet. I may update this README in future.
 
 ## Credits
 
