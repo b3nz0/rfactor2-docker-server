@@ -1,3 +1,5 @@
+# All credit goes to https://github.com/afloesch/rfactor2-server-setup
+
 $workDir="C:\"
 $steamcmdURL="https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
 
