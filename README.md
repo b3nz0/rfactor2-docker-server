@@ -56,6 +56,17 @@ Once the bootstrapping is complete (steamcmd + rfactor-dedicated-server + steam 
 
 Once all the content has been installed, use `MAS.exe` to build a mod package for use with the dedicated server. This should be fairly straight forward, I'm not going to go into detail on this as yet. I may update this README in future.
 
+Don't forget to port-forward/pinhole the required ports from your router to your docker host. The ports to port-forward are listed in the docker-compose.yaml
+
+```
+- 54297:54297/tcp
+- 54297:54297/udp
+- 64297:64297/tcp
+- 64298:64298/udp
+- 64299:64299/udp
+```
+**DO NOT EXPOSE tcp/8006 or tcp/3389 TO THE INTERNET**
+
 ## Credits
 
 This project builds upon the excellent work from:
