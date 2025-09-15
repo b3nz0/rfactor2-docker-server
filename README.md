@@ -39,6 +39,8 @@ Once the container has initialised and Windows has completed installing, you are
 
 The deployment is supposed to launch `install.bat` automatically from the `C:\OEM` folder - if this doesn't occur, manually execute the BAT file to deploy `steamcmd` and `rfactor2-dedicated-server` or simply run the `ps1` file - either should work fine.
 
+### Content
+
 Modify `rf2serversetup.ps1` with the content you require.
 
 ```
@@ -52,9 +54,15 @@ Modify `rf2serversetup.ps1` with the content you require.
 
 In the above example, `365960` == rFactor2 and `1629100532` etc are Workshop IDs from the RF2 Steam Workshop
 
+### Config rf2
+
 Once the bootstrapping is complete (steamcmd + rfactor-dedicated-server + steam workshop content) you need to use `ModMgr.exe` to install all the content which should have been automatically moved from `C:\steamcmd\steamsapps\workshop\content\365960` to `C:\rfactor2-dedicated\Packages`
 
 Once all the content has been installed, use `MAS.exe` to build a mod package for use with the dedicated server. This should be fairly straight forward, I'm not going to go into detail on this as yet. I may update this README in future.
+
+Then simply launch `C:\rfactor2-dedicated\rFacror2 Dedicated.exe` and select the mod package you created using `MAS.exe` - complete the additional configuration settings and happy lapping.
+
+### Networking
 
 Don't forget to port-forward/pinhole the required ports from your router to your docker host. The ports to port-forward are listed in the docker-compose.yaml
 
