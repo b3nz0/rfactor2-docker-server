@@ -27,5 +27,8 @@ services:
       stop_grace_period: 2m
       volumes:
         - ./bootstrap:/oem
+        - ./data:/data
+        - ./windows:/storage
       dns:
         - 1.1.1.1
+      restart: unless-stopped
